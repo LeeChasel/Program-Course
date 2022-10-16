@@ -15,3 +15,5 @@ test.*
 
 # ASP.NET (Web Form) , C#
 .vs
+/Advanced Computer Programing/quiz_1/nbproject/private/
+/Advanced Computer Programing/Quiz_1/build/
