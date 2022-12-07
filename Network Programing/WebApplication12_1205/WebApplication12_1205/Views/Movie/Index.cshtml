@@ -1,0 +1,13 @@
+﻿@model List<Movie> //表示傳進來的資料類型
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@foreach (Movie i in Model) //Model為傳入的資料
+{
+    <p>
+        @($"{i.Id} - {i.Title} - {i.ReleasedTime} - {i.Type} - {i.Price}")
+    </p>
+}
+
