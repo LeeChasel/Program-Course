@@ -1,0 +1,24 @@
+﻿@model List<Student>
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Search Page</h1>
+<form method="post" asp-action="Search" asp-controller="Student">
+    <p>
+        Id:
+        <input type="text" name="value1" />
+    </p>
+    <input type="submit" />
+</form>
+
+@if (Model != null)
+{
+    @foreach (Student i in Model)
+    {
+        <p>
+            @($"{i.Id} - {i.Name}- {i.Department}")
+        </p>
+    }
+}
+
